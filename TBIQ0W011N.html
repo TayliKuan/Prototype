@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
+        <title>核發資料查詢作業</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap-reboot.min.css"/>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <link rel="stylesheet" href="css/menu.css"/>
+        <link rel="stylesheet" href="css/default.css"/>
+    </head>
+
+    <body> 
+        <div class="web frameDiv">
+            <div class="nav">
+                <div class="sys_info">
+                    <div>登入人員：5000 12345</div>
+                    <div>目前時間：109/9/21 17:38:20 (星期一)</div>
+                </div>
+            </div>
+        
+            <!-- 側邊欄位    -->
+            <div class="wrapper">
+                <div class="content">
+                    <div class="sidenav">
+                        <div class="tree">
+                        <ul id="menu" class="root">
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidenav-button"><i class="fa fa-angle-right"></i></div>
+                <div class="page">
+                    <div class="main">
+                        <div class="header">
+                            <ol class="breadcrumb2">
+                                <li class="breadcrumb-item2">Home</li>
+                                <li class="breadcrumb-item2">Library</li>
+                                <li class="breadcrumb-item2">Data</li>
+                            </ol>
+                        </div>
+
+                        <!-- 主要內容標題區 -->
+                        <div class="fieldset">
+                            <div class="legend">
+                                核發資料查詢作業-TBIQ0W011N
+                            </div>
+                            <div class="timeword">
+                                網頁下載時間：109/9/21 17:38:20
+                            </div>
+                        </div>
+                        
+                        <!-- 按鈕區 -->
+                        <div class="container formButtonDiv">
+                            <a href="TBIQ0W010Q.html">
+                            <button type="submit" class="btnwhite">
+                                返回<i class="fas fa-reply"></i>
+                            </button>
+                        </a>
+                        </div>
+                            <br>
+                            <table class="form-table">
+                                <tr>
+                                    <th style="width: 130px;">身分證號：</th>
+                                    <td style="width: 130px;">U123456789</td>
+                                    <th style="width: 130px;">受理編號：</th>
+                                    <td style="width: 130px;"></td>
+                                    <th style="width: 130px;">姓名：</th>
+                                    <td style="width: 130px;"></td>
+                                </tr>
+                                <tr>
+                                    <th>起訖年度：</th>
+                                    <td>~</td>
+                                    <th>出生日期：</th>
+                                    <td></td>
+                                    <th></th>
+                                    <td></td>
+                                </tr>
+                            </table>
+                            <hr>
+                          <table class="caption inquiry" >
+                              <tr>
+                                <td class="text-center">序</td>
+                                <td class="text-center">受理編號</td>
+                                <td class="text-center">身分證號</td>
+                                <td class="text-center">姓名</td>
+                                <td class="text-center">出生日期</td>
+                                <td class="text-center">核定種類</td>
+                                <td class="text-center">申請日期</td>
+                                <td class="text-center">實發金額</td>
+                                <td class="text-center">核發日期</td>
+                                <td class="text-center">處理狀況</td>
+                                <td class="text-center">資料明細</td>
+                              </tr>
+                            <tbody class="tbbody">
+                              <tr>
+                                <td class="text-center">1</td>
+                                <td class="text-center"><font color="#FF0000">110071000001</font></td>
+                                <td class="text-center"><font color="#FF0000">L123456788</font></td>
+                                <td class="text-center"><font color="#FF0000">李大</font></td>
+                                <td class="text-center"><font color="#FF0000">0450101</font></td>
+                                <td class="text-center"><font color="#FF0000">月退儲金</font></td>
+                                <td class="text-center"><font color="#FF0000">1100201</font></td>
+                                <td class="text-center"><font color="#FF0000"></font></td>
+                                <td class="text-center"><font color="#FF0000"></font></td>
+                                <td class="text-center"><font color="#FF0000">首發案-受理中</font></td>
+                                <td class="text-center">
+                                    <a href="TBIQ0W012Q.html">
+                                    <button type="submit" class="btnwhite">
+                                        明細查詢
+                                    </button>
+                                    </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        <!-- 訊息區start -->
+                        <div class="infoarea TframeDiv" style="width:100%;display:flex">
+                            <div class="footer">
+                                <div class="ifon infotitle"> <i class="fas fa-caret-down"></i><b>【訊息區】</b></div>
+                                <div class="prog infoword">訊息文字</div>
+                            </div>
+                        </div>
+                        <!-- 訊息區end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/fontawesome-all.js"></script>
+        <script src="js/datatables.min.js"></script>
+        <script src="js/comm.js"></script>
+        <script src="https://cdn.datatables.net/plug-ins/1.10.21/pagination/input.js"></script>
+        <script src="js/menu.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $("#demo").DataTable();
+            });
+        </script>
+    </body>
+</html>

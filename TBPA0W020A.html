@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
+  <title>決行層級維護作業-新增作業</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap-reboot.min.css" />
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/default.css" />
+
+</head>
+
+<body>
+  <div class="web frameDiv">
+    <div class="nav">
+      <div class="sys_info">
+        <div>登入人員：5000 12345</div>
+        <div>目前時間：109/9/21 17:38:20 (星期一)</div>
+      </div>
+    </div>
+
+    <!-- 側邊欄位    -->
+    <div class="wrapper">
+      <div class="content">
+        <div class="sidenav">
+          <div class="tree">
+            <ul id="menu" class="root">
+
+            </ul>
+          </div>
+        </div>
+        <div class="sidenav-button"><i class="fa fa-angle-right"></i></div>
+        <div class="page">
+          <div class="main">
+
+            <div class="header">
+              <ol class="breadcrumb2">
+                <li class="breadcrumb-item2">Home</li>
+                <li class="breadcrumb-item2">Library</li>
+                <li class="breadcrumb-item2">Data</li>
+              </ol>
+            </div>
+
+            <!-- 主要內容標題區 -->
+            <div class="fieldset">
+              <div class="legend">
+                決行層級維護作業-TBPA0W020A
+              </div>
+              <div class="timeword">
+                網頁下載時間：109/9/21 17:38:20
+              </div>
+            </div>
+
+            <!-- 按鈕區 -->
+            <div class="container formButtonDiv">
+              <button type="submit" class="btnwhite">
+                確認
+              </button>
+              <button type="submit" class="btnwhite">
+                清除<i class="fas fa-eraser"></i>
+              </button>
+              <a href="TBPA0W020M.html">
+              <button type="submit" class="btnwhite">
+                返回<i class="fas fa-reply"></i>
+              </a>
+              </button>
+            </div>
+
+
+            <form name="form1" method="post" action="">
+              <table width="98%" cellpadding="3" cellspacing="4" class="px13">
+                <tr>
+                  <td width="50%" id="iss">
+                    <font color="#FF0000">＊</font><span class="issuetitle_R_down">核發種類：</span>
+                    <select name="fkind1" class="formtxt">
+                      <option>請選擇</option>
+                      <option>61-提前請領農退儲金</option>
+                      <option>71-月退休儲金</option>
+                      <option>72-續提農退儲金</option>
+                      <option>81-死亡農退儲金</option>
+                      <option>82-死亡農儲金(含續提)</option>
+                      <option>83-遺囑請領農退儲金</option>
+                      <option>遺囑指定請領人</option>
+                      <option>取消資格</option>
+                    </select>
+                  <td width="50%" id="iss">
+                    <font color="#FF0000">＊</font><span class="issuetitle_R_down">案件類別：</span>
+                    <select name="fkind1" class="formtxt">
+                      <option>請選擇</option>
+                      <option> 1-首發</option>
+                      <option> 2-續發</option>
+                      <option> 3-不予核發</option>
+                      <option> 4-結案</option>
+                      <option> 5-暫緩核發</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="50%" id="iss">
+                    <font color="#FF0000">＊</font><span class="issuetitle_R_down">決行層級：</span>
+                    <select name="fkind1" class="formtxt">
+                      <option value="1" selected>承辦人員</option>
+                      <option value="2">複核</option>
+                      <option value="3">科長</option>
+                      <option value="4">專門委員(視察)</option>
+                      <option value="5">副組長</option>
+                      <option value="6">組長</option>
+                    </select>
+                  <td width="50%" id="iss">
+                    <font color="#FF0000">＊</font><span class="issuetitle_R_down">代決行層級：</span>
+                    <select name="fkind1" class="formtxt">
+                      <option value="1" selected>承辦人員</option>
+                      <option value="2">複核</option>
+                      <option value="3">科長</option>
+                      <option value="4">專門委員(視察)</option>
+                      <option value="5">副組長</option>
+                      <option value="6">組長</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <div id="selectItem"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" id="iss">
+                    <font color="#FF0000">＊</font><span class="issuetitle_R_down">註記程度決行權限：</span>
+                    <span class="formtxt">
+                      <input name="checkbox01" type="checkbox">1.錯誤程度(E)
+                      <input name="checkbox02" type="checkbox">2.穿透程度(O)
+                      <input name="checkbox03" type="checkbox">3.警告程度(W)
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" id="iss">
+                    <font color="#FF0000">＊</font><span class="issuetitle_R_down">決行層級說明：</span>
+                    <span class="formtxt">
+                      <input type="text" class="textinput" size="50" align="left">
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"></td>
+                </tr>
+              </table>
+            </form>
+
+            <hr>
+            <div class="note-area">
+              <div>
+                <font color="#FF0000">※注意事項：</font>
+              </div>
+              <div class="note-text">
+                <br>
+                <font color="#FF0000">＊</font>為必填欄位。<br>
+              </div>
+            </div>
+
+          </div>
+          <!-- 訊息區start -->
+          <div class="infoarea TframeDiv" style="width:100%;display:flex">
+            <div class="footer">
+              <div class="ifon infotitle"> <i class="fas fa-caret-down"></i><b>【訊息區】</b></div>
+              <div class="prog infoword">訊息文字</div>
+            </div>
+          </div>
+          <!-- 訊息區end -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/fontawesome-all.js"></script>
+  <script src="js/datatables.min.js"></script>
+  <script src="js/comm.js"></script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/pagination/input.js"></script>
+  <script src="js/menu.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $("#demo").DataTable();
+    });
+  </script>
+
+
+</body>
+
+</html>
