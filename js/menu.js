@@ -104,8 +104,13 @@ var menuHierarchy =[
             ['打包清單列(補)印','TBPR0W050L.html',],
             ['合格清冊補印','TBPR0W060L.html',],
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             ['月試核異動清單補印','',],
             ['提繳時差轉入農退儲金月退專戶清單補印','',],
+=======
+            ['月試核異動清單補印','TBPR0W070L.html',],
+            ['提繳時差轉入農退儲金月退專戶清單補印','TBPR0W080L.html',],
+>>>>>>> Stashed changes
 =======
             ['月試核異動清單補印','TBPR0W070L.html',],
             ['提繳時差轉入農退儲金月退專戶清單補印','TBPR0W080L.html',],
