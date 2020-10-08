@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
+  <title>清單列印</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap-reboot.min.css" />
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/default.css" />
+</head>
+
+<body>
+  <div class="web">
+    <div class="nav">
+      <div class="sys_info">
+        <div>登入人員：5000 12345</div>
+        <div>目前時間：109/9/21 17:38:20 (星期一)</div>
+      </div>
+    </div>
+    <!-- 側邊欄位    -->
+    <div class="wrapper">
+      <div class="content">
+        <div class="sidenav">
+          <div class="tree">
+            <ul id="menu" class="root"></ul>
+          </div>
+        </div>
+        <div class="sidenav-button"><i class="fa fa-angle-right"></i></div>
+        <div class="page">
+          <div class="main">
+            <div class="header">
+              <ol class="breadcrumb2">
+                <li class="breadcrumb-item2">Home</li>
+                <li class="breadcrumb-item2">Library</li>
+                <li class="breadcrumb-item2">Data</li>
+              </ol>
+            </div>
+
+            <!-- 主要內容標題區 -->
+            <div class="fieldset">
+              <div class="legend">核定清單列(補)印-TBPR0W010I</div>
+              <div class="timeword">網頁下載時間：109/9/21 17:38:20</div>
+            </div>
+
+            <!-- 按鈕區 -->
+            <div class="container formButtonDiv">
+              <button type="submit" class="btnwhite" id="print">
+                確認<i class="fas fa-user-check" ></i>
+              </button>
+
+              <button type="submit" class="btnwhite" id="again" style="display: none;">
+                補印
+              </button>
+
+              <button type="submit" class="btnwhite">
+                清除<i class="fas fa-eraser"></i>
+              </button>
+            </div>
+
+            <!--列印-->
+            <form action="">
+              <fieldset>
+                <legend>核定清單列(補)印作業</legend>
+
+                <div style="padding: 0px 20%">
+                  <table class="form-table">
+                    <tr>
+                      <th></th>
+                      <td>
+                        <input type="radio"  name="printwork" checked onclick="radio('1')"> <label
+                          for="print">列印</label>
+                        <input type="radio"  name="printwork" onclick="radio('2')"> <label
+                          for="again">補印</label>
+                      </td>
+                    </tr>
+                    <tbody id="radio1">
+                      <tr>
+                        <th class="star">核發種類：</th>
+                        <td>
+                          <select>
+                            <option value="0"></option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>決行人員：</th>
+                        <td>
+                          <input type="text" class="textinput" size="21" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="star">決行日期：</th>
+                        <td>
+                          <input type="text" class="textinput" size="13" />&nbsp(日期輸入格式：YYMMDD)
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>受理編號：</th>
+                        <td>
+                          <input type="text" class="textinput" size="21" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <th></th>
+                        <td>
+                          有<span style="color: red">*</span>符號為必需輸入欄位
+                        </td>
+                      </tr>
+                </tbody>
+                <!--補印-->
+
+                <tbody id="radio2" style="display: none;">
+                  <tr>
+                    <th class="star">核發種類：</th>
+                    <td>
+                      <select>
+                        <option value="0"></option>
+                      </select>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th class="star">印表日期：</th>
+                    <td>
+                      <input type="text" class="textinput" size="13" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>頁次：</th>
+                    <td>
+                      <input type="text" class="textinput" size="13" />~
+                      <input type="text" class="textinput" size="13" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <td>
+                      有<span style="color: red">*</span>符號為必需輸入欄位
+                    </td>
+                  </tr>
+                </tbody>
+                </table>
+          </div>
+          </fieldset>
+          </form>
+
+
+
+          <!-- 訊息區start -->
+          <div class="infoarea TframeDiv" style="width: 100%; display: flex">
+            <div class="footer">
+              <div class="ifon infotitle">
+                <i class="fas fa-caret-down"></i><b>【訊息區】</b>
+              </div>
+              <div class="prog infoword">訊息文字</div>
+            </div>
+          </div>
+          <!-- 訊息區end -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/fontawesome-all.js"></script>
+  <script src="js/datatables.min.js"></script>
+  <script src="js/comm.js"></script>
+  <script src="https://cdn.datatables.net/plug-ins/1.10.21/pagination/input.js"></script>
+  <script src="js/menu.js"></script>
+  <script type="text/javascript">
+    function radio(id) {
+      switch (id) {
+        case "1":
+          $("#radio1").show();
+          $("#radio2").hide();
+
+          $("#print").show();
+          $("#again").hide();
+          break;
+
+        case "2":
+          $("#radio1").hide();
+          $("#radio2").show();
+
+          $("#print").hide();
+          $("#again").show();
+          break;
+      }
+    }
+  </script>
+</body>
+
+</html>
