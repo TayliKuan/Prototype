@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=1"
+    />
+    <title>續發╱補發合格(事故)清冊補印</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap-reboot.min.css"
+    />
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/default.css" />
+  </head>
+
+  <body>
+    <div class="web">
+      <div class="nav">
+        <div class="sys_info">
+          <div>登入人員：5000 12345</div>
+          <div>目前時間：109/9/21 17:38:20 (星期一)</div>
+        </div>
+      </div>
+      <!-- 側邊欄位    -->
+      <div class="wrapper">
+        <div class="content">
+          <div class="sidenav">
+            <div class="tree">
+              <ul id="menu" class="root"></ul>
+            </div>
+          </div>
+          <div class="sidenav-button"><i class="fa fa-angle-right"></i></div>
+          <div class="page">
+            <div class="main">
+              <div class="header">
+                <ol class="breadcrumb2">
+                  <li class="breadcrumb-item2">Home</li>
+                  <li class="breadcrumb-item2">Library</li>
+                  <li class="breadcrumb-item2">Data</li>
+                </ol>
+              </div>
+
+              <!-- 主要內容標題區 -->
+              <div class="fieldset">
+                <div class="legend">續發╱補發合格(事故)清冊補印-TBPR0W060L</div>
+                <div class="timeword">網頁下載時間：109/9/21 17:38:20</div>
+              </div>
+
+              <!-- 按鈕區 -->
+              <div class="container formButtonDiv">
+                <button type="submit" class="btnwhite">
+                  補印
+                </button>
+                <button type="submit" class="btnwhite">
+                  清除<i class="fas fa-eraser"></i>
+                </button>
+              </div>
+
+              <form action="">
+                <fieldset>
+                  <legend>續發╱補發合格(事故)清冊補印</legend>
+                  <div style="padding: 0px 25%">
+                    <table class="form-table">
+                      <tr>
+                        <th class="star" width="40%">核發種類：</th>
+                        <td>
+                          <select>
+                            <option></option>
+                          </select>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td style="text-align: right">
+                            <input name="xxx" type="radio" checked />續發 &nbsp;
+                          </td>
+                        <td style="text-align: left">
+                            &nbsp;<input name="xxx" type="radio" />補發
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th class="star">印表日期：</th>
+                        <td>
+                          <input type="text" size="7" class="textinput" />
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th>印表頁次：</th>
+                        <td>
+                          <input type="text" size="7" class="textinput" />~
+                          <input type="text" size="7" class="textinput" />
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td colspan="2" style="text-align: center">
+                          有<span style="color: red">*</span>符號為必需輸入欄位
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+
+            <!-- 訊息區start -->
+            <div class="infoarea TframeDiv" style="width: 100%; display: flex">
+              <div class="footer">
+                <div class="ifon infotitle">
+                  <i class="fas fa-caret-down"></i><b>【訊息區】</b>
+                </div>
+                <div class="prog infoword">訊息文字</div>
+              </div>
+            </div>
+            <!-- 訊息區end -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/fontawesome-all.js"></script>
+    <script src="js/datatables.min.js"></script>
+    <script src="js/comm.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/1.10.21/pagination/input.js"></script>
+    <script src="js/menu.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#demo").DataTable();
+      });
+
+      function fun_add() {
+        switch (document.all("paykind").value) {
+          case "0":
+            alert("請選擇核發種類!");
+            break;
+          case "1":
+            document.location.href = "TBAP0W012A.html";
+            break;
+          case "2":
+            document.location.href = "TBAP0W013A.html";
+            break;
+          case "3":
+            document.location.href = "TBAP0W014A.html";
+            break;
+        }
+      }
+
+      function fun_upd() {
+        document.location.href = "TBAP0W011N.html";
+      }
+    </script>
+  </body>
+</html>
