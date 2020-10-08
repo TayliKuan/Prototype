@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
+  <title>核付作業</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap-reboot.min.css" />
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/default.css" />
+
+  <style>
+    .dataTables_wrapper .pagination {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="web">
+    <div class="nav">
+      <div class="sys_info">
+        <div>登入人員：5000 12345</div>
+        <div>目前時間：109/9/21 17:38:20 (星期一)</div>
+      </div>
+    </div>
+    <!-- 側邊欄位    -->
+    <div class="wrapper">
+      <div class="content">
+        <div class="sidenav">
+          <div class="tree">
+            <ul id="menu" class="root"></ul>
+          </div>
+        </div>
+        <div class="sidenav-button"><i class="fa fa-angle-right"></i></div>
+        <div class="page">
+          <div class="main">
+            <div class="header">
+              <ol class="breadcrumb2">
+                <li class="breadcrumb-item2">Home</li>
+                <li class="breadcrumb-item2">Library</li>
+                <li class="breadcrumb-item2">Data</li>
+              </ol>
+            </div>
+
+            <!-- 主要內容標題區 -->
+            <div class="fieldset">
+              <div class="legend">月核付作業-TBPY0W010M</div>
+              <div class="timeword">網頁下載時間：109/9/21 17:38:20</div>
+            </div>
+
+            <!-- 按鈕區 -->
+            <div class="container formButtonDiv">
+              <button type="submit" class="btnwhite">執行</button>
+              <button type="submit" class="btnwhite">
+                清除<i class="fas fa-eraser"></i>
+              </button>
+            </div>
+
+            <form action="">
+              <fieldset>
+                <legend>月核付作業</legend>
+                <div style="padding: 0px 20%">
+                  <table class="form-table">
+                    <tr>
+                      <th class="star">核付年月：</th>
+                      <td>
+                        <input type="text" class="textinput" size="21" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="star">核付日期：</th>
+                      <td>
+                        <input type="text" class="textinput" size="13" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th></th>
+                      <td>
+                        有<span style="color: red">*</span>符號為必需輸入欄位
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </fieldset>
+            </form>
+
+            <div class="searcharea">
+              <div clasa="label">查詢期間：</div>
+              <div class="item"><input type="text" size="7" /></div>
+              ~
+              <div class="item"><input type="text" size="7" /></div>
+              <button type="submit" class="btnwhite" id="openWall">
+                查詢結果
+              </button>
+            </div>
+            
+            <div>
+            <table class="caption inquiry" style="width:100%">
+              <thead class="tbhead">
+                <tr class="">s
+                  <td class="text-center" width="10%">執行編號</td>
+                  <td class="text-center" width="10%">執行功能</td>
+                  <td class="text-center" width="5%">執行員編</td>
+                  <td class="text-center" width="10%">開始執行時間</td>
+                  <td class="text-center" width="10%">結束執行時間</td>
+                  <td class="text-center" width="10%">預約執行時間</td>
+                  <td class="text-center" width="10%">執行狀態</td>
+                  <td class="text-center" width="10%"></td>
+                  <td class="text-center" width="30%">
+                    訊息摘要紀錄(下載連結)
+                  </td>
+                </tr>
+              </thead>
+              <tbody class="tbbody">
+                <tr>
+                  <td class="text-center">202007300000172</td>
+                  <td class="text-center">
+                    月核付作業
+                  </td>
+                  <td class="text-center">16889</td>
+                  <td class="text-center">1090730 15:40:10</td>
+                  <td class="text-center">1090730 15:40:10</td>
+                  <td class="text-center">1090730 15:40:10</td>
+                  <td class="text-center">4:執行成功</td>
+                  <td class="text-center">
+                    <button type="submit" class="btnwhite">
+                      Duein單
+                    </button>
+                  </td>
+                  <td class="text-center" align="left">
+                    傳入參數：核付年月[10908]核付日期[1090825] <br />
+
+                    <a href="">月核付個人專戶回寫檔</a> <br />
+                    產生月核付個人專戶回寫檔案筆數共計[897]筆<br />
+
+                    <a href="">核發核付明細表</a><br />
+                    產生核發核付明細表筆數共計[193]筆<br />
+
+                    <a href="">金融轉帳媒體檔</a><br />
+                    產生金融轉帳媒體檔筆數共計[193]筆<br />
+
+                    <a href="">核發核定清單</a><br />
+                    產生核發核定清單筆數共計[5]筆<br />
+
+                    <a href="">月退金彙總表</a><br />
+                    產生月退金彙總表筆數共計[3]筆<br />
+
+                    <a href="">核定合格清冊</a><br />
+                    產生核定合格清冊筆數共計[193]筆<br />
+
+                    <a href="">月退金核發撥款總額表</a><br />
+                    產生月退金核發撥款總額表筆數共計[2]筆<br />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+            <br />
+            <br />
+            <!-- 訊息區start -->
+            <div class="infoarea TframeDiv" style="width: 100%; display: flex">
+              <div class="footer">
+                <div class="ifon infotitle">
+                  <i class="fas fa-caret-down"></i><b>【訊息區】</b>
+                </div>
+                <div class="prog infoword">訊息文字</div>
+              </div>
+            </div>
+            <!-- 訊息區end -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/fontawesome-all.js"></script>
+    <script src="js/datatables.min.js"></script>
+    <script src="js/comm.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/1.10.21/pagination/input.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
