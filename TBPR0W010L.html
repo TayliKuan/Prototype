@@ -47,11 +47,11 @@
 
             <!-- 按鈕區 -->
             <div class="container formButtonDiv">
-              <button type="submit" class="btnwhite" id="print">
+              <button type="submit" class="btnwhite" id="printbtn">
                 確認<i class="fas fa-user-check" ></i>
               </button>
 
-              <button type="submit" class="btnwhite" id="again" style="display: none;">
+              <button type="submit" class="btnwhite" id="againbtn" style="display: none;">
                 補印
               </button>
 
@@ -70,9 +70,9 @@
                     <tr>
                       <th></th>
                       <td>
-                        <input type="radio"  name="printwork" checked onclick="radio('1')"> <label
+                        <input type="radio"  id="print" name="printwork" checked onclick="radio('1')"> <label
                           for="print">列印</label>
-                        <input type="radio"  name="printwork" onclick="radio('2')"> <label
+                        <input type="radio"  id="again" name="printwork" onclick="radio('2')"> <label
                           for="again">補印</label>
                       </td>
                     </tr>
@@ -175,16 +175,16 @@
           $("#radio1").show();
           $("#radio2").hide();
 
-          $("#print").show();
-          $("#again").hide();
+          $("#printbtn").show();
+          $("#againbtn").hide();
           break;
 
         case "2":
           $("#radio1").hide();
           $("#radio2").show();
 
-          $("#print").hide();
-          $("#again").show();
+          $("#printbtn").hide();
+          $("#againbtn").show();
           break;
       }
     }
