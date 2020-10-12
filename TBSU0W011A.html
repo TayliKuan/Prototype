@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1" />
-  <title>受理作業</title>
+  <title>行政支援資料維護</title>
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap-reboot.min.css" />
   <script src="js/jquery-3.5.1.min.js"></script>
@@ -42,7 +42,7 @@
 
             <!-- 主要內容標題區 -->
             <div class="fieldset">
-              <div class="legend">受理新增作業：月退休儲金-TBAP0W012A</div>
+              <div class="legend">行政支援資料新增-TBSU0W011A</div>
               <div class="timeword">網頁下載時間：109/9/21 17:38:20</div>
             </div>
 
@@ -51,10 +51,7 @@
               <button type="submit" class="btnwhite">
                 確認<i class="fas fa-user-check"></i>
               </button>
-              <button type="submit" class="btnwhite">
-                清除<i class="fas fa-eraser"></i>
-              </button>
-              <button type="submit" class="btnwhite" onClick="javascript:document.location.href='TBAP0W010Q.html';">
+              <button type="submit" class="btnwhite" onClick="javascript:document.location.href='TBSU0W010M.html';">
                 返回<i class="fas fa-reply"></i>
               </button>
             </div>
@@ -62,68 +59,123 @@
             <table class="form-table">
               <tr>
                 <th colspan="6" class="title">
-                  <i class="fas fa-user-edit"></i> 基本資料
+                  <i class="fas fa-user-edit"></i> 行政支援資料新增
                 </th>
               </tr>
               <tr>
-                <th class="star" width="15%">農民姓名：</th>
+                <th class="star" width="15%">承辦/收創日期：</th>
                 <td width="20%">
-                  <input type="text" class="textinput" size="20" />
+                  <input type="text" class="textinput" size="20" value="1090826"/>
                 </td>
-                <th class="star" width="15%">農民出生日期：</th>
+                <th class="star" width="15%">函別/承辦註記：</th>
                 <td width="20%">
-                  <input type="text" class="textinput" size="7" />
-                </td>
-                <th class="star" width="10%">農民身分證字號：</th>
-                <td width="20%">
-                  <input type="text" class="textinput" size="12" />
+                  <input type="text" class="textinput" size="7" value="21"/>
+                  <input type="text" class="textinput" size="21" value="不予核發函"/>
                 </td>
               </tr>
               <tr>
-                <th class="star">申請日期：</th>
+                <th width="10%">核發資料：</th>
+              </tr>
+              <tr>
+                <th class="star" width="10%">受理編號：</th>
+                <td width="20%">
+                  <input type="text" class="textinput" size="12" value="109042XXX"/>
+                </td>
+                <th  width="10%">初核人員：</th>
+                <td width="20%">
+                  <input type="text" class="textinput" size="12" value="16889"/>
+                </td>
+              </tr>
+              <tr>
+                <th>姓名：</th>
                 <td><input type="text" class="textinput" size="7" /></td>
-                <th class="star">本局收到日期：</th>
-                <td colspan="3">
+                <th>身分證號：</th>
+                <td>
+                  <input type="text" class="textinput" size="7" />
+                </td>
+                <th>出生日期：</th>
+                <td>
                   <input type="text" class="textinput" size="7" />
                 </td>
               </tr>
               <tr>
-                <th class="star">通訊地址：</th>
-                <td colspan="5">
-                  <input type="text" size="1" class="textinput" />&nbsp;
-                  <font size="2pt">(1-現居地；2-戶籍地)</font>
-                  &nbsp;現居地：
-                  <input type="text" size="6" class="textinput" />
-                  <font size="2pt">(郵遞區號)</font>
-                  <input type="text" size="50" placeholder="請輸入地址" class="textinput" />
-                </td>
-              </tr>
-              <tr>
-                <th class="star">電話：</th>
+                <th>來受文號：</th>
                 <td>
                   <input type="text" class="textinput text-center" size="10" />
                 </td>
-                <th class="star">行動電話：</th>
-                <td colspan="3">
+                <th>來受文機關代號：</th>
+                <td>
+                  <input type="text" class="textinput" size="10" />
+                </td>
+                <th>來受文機關名稱：</th>
+                <td>
                   <input type="text" class="textinput" size="10" />
                 </td>
               </tr>
               <tr>
-                <th class="star">核發方式：</th>
-                <td>
-                  <input type="text" style="display: inline" size="1" class="textinput" />
+                <th>公文摘記：</th>
+                <td colspan="5">
+                  <input type="text" class="textinput text-center" size="150" />
                 </td>
-                <th>帳戶：</th>
+              </tr>
+              <tr>
+                <th>公文承辦註記：</th>
                 <td>
-                  <input type="text" style="display: inline" size="3" class="textinput" />&nbsp;-&nbsp;
-                  <input type="text" style="display: inline" size="4" class="textinput" />&nbsp;-&nbsp;
-                  <input type="text" style="display: inline" size="14" class="textinput" />
+                  <input type="text" class="textinput text-center" size="10" />
                 </td>
-                <th class="star">帳戶複驗：</th>
+                <th>案類：</th>
                 <td>
-                  <input type="text" style="display: inline" size="3" class="textinput" />&nbsp;-&nbsp;
-                  <input type="text" style="display: inline" size="4" class="textinput" />&nbsp;-&nbsp;
-                  <input type="text" style="display: inline" size="14" class="textinput" />
+                  <input type="text" class="textinput" size="10" />
+                </td>
+                <th>承辦完成日：</th>
+                <td>
+                  <input type="text" class="textinput" size="10" />
+                </td>
+              </tr>
+              <tr>
+                <th>相關文號：</th>
+                <td>
+                  <input type="text" class="textinput text-center"/>
+                </td>
+              </tr>
+              <tr>
+                <th>待結註記：</th>
+                <td>
+                  <input type="text" class="textinput text-center" size="10" />
+                </td>
+                <th>催辦註記：</th>
+                <td>
+                  <input type="text" class="textinput" size="10" />
+                </td>
+                <th>銷案文號：</th>
+                <td>
+                  <input type="text" class="textinput" size="10" />
+                </td>
+              </tr>
+              <tr>
+                <th>管制註記：</th>
+                <td>
+                  <input type="text" class="textinput text-center"/>
+                </td>
+              </tr>
+              <tr>
+                <th>銷案日期：</th>
+                <td> </td>
+              </tr>
+              <tr>
+                <th class="star">處理註記(一)：</th>
+                <td>
+                  <select>
+                    <option value="0">01-年齡未滿60歲</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th class="star">處理註記(二)：</th>
+                <td>
+                  <select>
+                   
+                  </select>
                 </td>
               </tr>
             </table>
@@ -133,10 +185,7 @@
                 <font color="#FF0000">※注意事項：</font>
               </div>
               <div class="note-text">
-                1.&nbsp;外藉人士請於身分證字號欄位填寫護照號碼、居留證號碼或統一編號。<br />
-                2.&nbsp;有關日期的欄位，填寫格式如民國98年1月1日，請輸入0980101。<br />
-                3.&nbsp;有關核發方式的欄位，0-同原轉帳代繳帳，1-金融機構轉帳，2-郵局存簿儲金，4-郵政匯票，5-國外匯款，7-緊急電匯，8-電匯，A-郵寄支票。<br />
-                4.&nbsp;<font color="#FF0000">＊</font>為必填欄位。<br />
+                1.&nbsp;<font color="#FF0000">＊</font>為必填欄位。<br />
               </div>
             </div>
           </div>
